@@ -326,3 +326,21 @@ WINDOW VERSION */
     background-color: #211E1F;
     cursor: pointer;
 }
+
+@media (max-width: 480px){
+    main{
+        background-image: none;
+    }
+
+    .container-login{
+        width: 480px;
+        max-width: 30rem;
+    }
+
+    .window-version{
+        width: 28rem;
+        height: 20rem;
+        border: 1px solid #333333;
+    }
+
+}
