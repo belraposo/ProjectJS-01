@@ -12,7 +12,6 @@ a{
 
 body{
     height: 100vh;
-    background-color: aqua;
 }
 
 main{
@@ -274,4 +273,57 @@ main{
 .box-version p:hover{
     cursor: pointer;
     color: #757575;
+}
+/* 
+WINDOW VERSION */
+
+.window-version{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    width: 32rem;
+    height: 22rem;
+    border-radius: 8px;
+    display: none;
+}
+
+.container-versions{
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #666666;
+}
+
+.container-versions p{
+    padding: 0.5rem 0;
+}
+
+.container-versions h2{
+    color: #211E1F;
+    padding-bottom: 1rem;
+}
+
+.btt-OK{
+    background-color: #292727;
+    margin-top: 3rem;
+    width: 25rem;
+    height: 3rem;
+    border: none;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.btt-OK:hover{
+    background-color: #211E1F;
+    cursor: pointer;
 }

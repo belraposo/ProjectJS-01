@@ -2,6 +2,9 @@ const [input0, input1] = document.querySelectorAll('input');
 const label0 = document.querySelector('.box-username label');
 const label1 = document.querySelector('.box-password label');
 const button = document.querySelector('#btt-start');
+const buttonVersion = document.querySelector('.box-version');
+const modal = document.querySelector('.window-version');
+const closeModal = modal.querySelector('.btt-OK');
 
 function action(){
     if(input0.value && input1.value.length >= 6){
@@ -46,3 +49,10 @@ function loosingFocus(){
 
 input0.addEventListener('blur', loosingFocus);
 input1.addEventListener('blur', loosingFocus);
+
+function version(){
+    modal.style.display = 'flex';
+}
+
+buttonVersion.addEventListener('click', version);
+closeModal.addEventListener('click', () => modal.style.display = 'none');
