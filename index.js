@@ -47,6 +47,7 @@ button.addEventListener('click', () => {
     window.alert('🌈Login efetuado com sucesso!');
     input0.value = '';
     input1.value = '';
+    button.setAttribute('disabled', 'disabled');
     labelEffects();
 });
 
