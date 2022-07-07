@@ -7,7 +7,7 @@ const modal = document.querySelector('.window-version');
 const closeModal = modal.querySelector('.btt-OK');
 
 function action(){
-    if(input0.value && input1.value.length >= 6){
+    if(input0.value && input1.value.length >= 4){
         button.removeAttribute('disabled');
         console.log(input0.value && input1.value);
     }else{
