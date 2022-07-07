@@ -338,9 +338,15 @@ WINDOW VERSION */
     }
 
     .window-version{
-        width: 28rem;
-        height: 20rem;
+        width: 25rem;
+        height: 18rem;
         border: 1px solid #333333;
+    }
+
+    .btt-OK{
+        width: 20rem;
+        height: 3rem;
+        margin-top: 1rem;
     }
 
 }
