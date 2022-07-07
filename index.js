@@ -11,8 +11,12 @@ function action(){
         button.removeAttribute('disabled');
         console.log(input0.value && input1.value);
     }else{
-        button.setAttribute('disabled', 'disabled')
+        button.setAttribute('disabled', 'disabled');
     }
+    labelEffect();
+}
+
+function labelEffect(){
     if(input0.value){
         label0.style.transform = 'translate(8%,25%)'; 
         label0.style.top = '0';
@@ -39,6 +43,12 @@ function action(){
 
 input0.addEventListener('input', action);
 input1.addEventListener('input', action);
+button.addEventListener('click', () => {
+    window.alert('🌈Login efetuado com sucesso!');
+    input0.value = '';
+    input1.value = '';
+    labelEffect();
+});
 
 function loosingFocus(){
     input0.style.fontSize = '1rem';
