@@ -13,10 +13,10 @@ function action(){
     }else{
         button.setAttribute('disabled', 'disabled');
     }
-    labelEffect();
+    labelEffects();
 }
 
-function labelEffect(){
+function labelEffects(){
     if(input0.value){
         label0.style.transform = 'translate(8%,25%)'; 
         label0.style.top = '0';
@@ -47,7 +47,7 @@ button.addEventListener('click', () => {
     window.alert('🌈Login efetuado com sucesso!');
     input0.value = '';
     input1.value = '';
-    labelEffect();
+    labelEffects();
 });
 
 function loosingFocus(){
