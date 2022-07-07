@@ -16,34 +16,43 @@
             <img src="imageslol/logo-riotgames.png" alt="Riot Games" class="logo-riotgames">
                 <div class="box-login-inputs">
                     <h1>Fazer login</h1>
-                    <input type="text" name="usuario" placeholder="NOME DE USUÁRIO">
-                    <input type="password" name="senha" placeholder="SENHA">
+                    <div class="box-username">
+                        <input type="text" name="usuario">
+                        <label for="usuario">NOME DE USUÁRIO</label>
+                    </div>
+                    <div class="box-password">
+                        <input type="password" name="senha">
+                        <label for="senha">SENHA</label>
+                    </div>
                     <div class="box-social-page">
-                        <a href="https://pt-br.facebook.com/leagueoflegends/">
-                            <button class="facebook-button" target="_blank"><img src="imageslol/facebook-icon.png" alt="Facebook Icon"></button>
+                        <a href="https://pt-br.facebook.com/leagueoflegends/" target="_blank">
+                            <button class="facebook-button"><img src="imageslol/facebook-icon.png" alt="Facebook Icon"></button>
                         </a>
-                        <a href="https://www.leagueoflegends.com/pt-br/">
-                            <button class="google-button" target="_blank"><img src="imageslol/google-icon.png" alt="Google Icon"></button>                   
+                        <a href="https://www.leagueoflegends.com/pt-br/" target="_blank">
+                            <button class="google-button"><img src="imageslol/google-icon.png" alt="Google Icon"></button>                   
                         </a>
-                        <a href="https://appleid.apple.com/auth/authorize?response_type=code%20id_token&response_mode=form_post&client_id=com.riotgames.authenticator.prod.client&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Fapple&scope=name%20email&nonce=4e20131d59b5e515ac1d6eadc25465420a2b42396ed9c7e0703c464fae45&state=3387d3873f46dfbc9b4e5ef076d80f6dbbf265a4e730dde259c21e80a09c">
-                            <button class="imac-button" target="_blank"><img src="imageslol/imac-icon.png" alt="iMac Icon"></button>
+                        <a href="https://appleid.apple.com/auth/authorize?response_type=code%20id_token&response_mode=form_post&client_id=com.riotgames.authenticator.prod.client&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Fapple&scope=name%20email&nonce=4e20131d59b5e515ac1d6eadc25465420a2b42396ed9c7e0703c464fae45&state=3387d3873f46dfbc9b4e5ef076d80f6dbbf265a4e730dde259c21e80a09c" target="_blank"> 
+                            <button class="imac-button"><img src="imageslol/imac-icon.png" alt="iMac Icon"></button>
                         </a>
                     </div>
                     <div class="box-checkbox">
-                        <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
-                        <label for="styled-checkbox-1">Manter login</label>
+                        <input id="login" type="checkbox">
+                        <label for="login">Manter login</label>
                     </div>
             </div>
-            <div class="box-start">
+            <button disabled id="btt-start">
                 <img src="imageslol/arrow-icon.png" alt="Button Start">
-            </div>
+            </button>
             <div class="box-error-version">
-                <a href="https://recovery.riotgames.com/pt-br?region=BR1">
+                <a href="https://recovery.riotgames.com/pt-br?region=BR1" target="_blank">
                     <p class="error">Não consegue iniciar sessão?</p>
                 </a>
-                <a href="https://signup.leagueoflegends.com/pt-br/signup/index#/">
+                <a href="https://signup.leagueoflegends.com/pt-br/signup/index#/" target="_blank">
                     <p class="create-account">Criar conta</p>
                 </a>
+            </div>
+            <div class="box-version">
+                <p>V52.0.1</p>
             </div>
         </section>
     </main>
